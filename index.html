@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bukovica</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">BUK </h2>
+            <div class="toggle"></div>
+        </header>
+        <video src="vikendica.MP4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+
+            <h2>Čarolije divne Bukovice</h2>
+            <h3>Uživajte u čarima prirode Crne Gore</h3>
+
+            <p>Ukoliko vam je gradska buka dosadila, zvukovi automobila vam idu na živce, odmor u Bukovici je pravo
+                rješenje za vas, užitak je zagarantovan </p>
+
+            <a href="#">Bukiraj</a>
+        </div>
+        <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+
+        </ul>
+
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Početna</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="#">Gdje se nalazimo</a></li>
+
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </div>
+    <script>
+
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+
+    </script>
+</body>
+
+</html>
